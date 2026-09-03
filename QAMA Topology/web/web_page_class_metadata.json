@@ -1,0 +1,148 @@
+[
+  {
+    "file_path": "pages/page_objects/blog_page.py",
+    "component": "blog_page",
+    "dependencies": [
+      "pages.page_objects.base_page",
+      "pages.elements",
+      "playwright.sync_api",
+      "pages.locators.blog_page_locators"
+    ],
+    "locator_keys": [],
+    "exposed_functions": [
+      {
+        "signature": "search_articles",
+        "purpose": "Executes a blog article search by entering the search query and submitting the search form.",
+        "input_parameters": [
+          "search_query"
+        ],
+        "output_parameters": [
+          "None"
+        ]
+      },
+      {
+        "signature": "get_searched_link",
+        "purpose": "Retrieves a specific blog post link element by its visible text name for interaction or navigation.",
+        "input_parameters": [
+          "link_text"
+        ],
+        "output_parameters": [
+          "Locator"
+        ]
+      }
+    ]
+  },
+  {
+    "file_path": "pages/page_objects/navbar.py",
+    "component": "navbar",
+    "dependencies": [
+      "pages.page_objects.base_page",
+      "dataclasses",
+      "pages.elements",
+      "playwright.sync_api",
+      "pages.locators.navbar_locators"
+    ],
+    "locator_keys": [],
+    "exposed_functions": [
+      {
+        "signature": "get_all_texts",
+        "purpose": "Purpose not extracted by LLM.",
+        "input_parameters": [],
+        "output_parameters": [
+          "Any"
+        ]
+      },
+      {
+        "signature": "get_navbar_links_formatted",
+        "purpose": "Retrieves all navigation links from the header and returns them as a formatted set of href attributes with trailing slashes removed.",
+        "input_parameters": [],
+        "output_parameters": [
+          "Any"
+        ]
+      },
+      {
+        "signature": "search_phrase",
+        "purpose": "Performs a search operation by opening the search toggle, entering the search phrase, and clicking the search button.",
+        "input_parameters": [
+          "phrase"
+        ],
+        "output_parameters": [
+          "Any"
+        ]
+      },
+      {
+        "signature": "get_link",
+        "purpose": "Locates and returns a specific navigation link element by filtering header links based on the provided link text.",
+        "input_parameters": [
+          "link_text"
+        ],
+        "output_parameters": [
+          "Any"
+        ]
+      },
+      {
+        "signature": "go_to_link",
+        "purpose": "Navigates to a specific section by clicking on the navigation link that matches the provided link text.",
+        "input_parameters": [
+          "link_text"
+        ],
+        "output_parameters": [
+          "Any"
+        ]
+      }
+    ]
+  },
+  {
+    "file_path": "pages/page_objects/__init__.py",
+    "component": "__init__",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pages/page_objects/main_page.py",
+    "component": "main_page",
+    "dependencies": [
+      "pages.page_objects.base_page",
+      "playwright.sync_api",
+      "pages.locators.main_page_locators"
+    ],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pages/page_objects/base_page.py",
+    "component": "base_page",
+    "dependencies": [
+      "pages.locators.base_page_locators",
+      "playwright.sync_api"
+    ],
+    "locator_keys": [],
+    "exposed_functions": [
+      {
+        "signature": "load",
+        "purpose": "Navigates the browser to the page's designated URL",
+        "input_parameters": [],
+        "output_parameters": [
+          "None"
+        ]
+      },
+      {
+        "signature": "accept_cookies",
+        "purpose": "Clicks the cookie consent button to accept all cookies",
+        "input_parameters": [],
+        "output_parameters": [
+          "Any"
+        ]
+      },
+      {
+        "signature": "load_and_accept_cookies",
+        "purpose": "Combines page navigation and cookie acceptance into a single workflow action",
+        "input_parameters": [],
+        "output_parameters": [
+          "Any"
+        ]
+      }
+    ]
+  }
+]
