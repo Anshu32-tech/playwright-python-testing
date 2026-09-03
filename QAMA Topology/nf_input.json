@@ -1,0 +1,15 @@
+{
+  "python_file_path": "pages/page_objects/blog_page.py",
+  "missing_methods": [
+    {
+      "intent": "Open an article",
+      "proposed_signature": "open_article(link_text: str)",
+      "implementation_checklist": [
+        "Use the existing get_searched_link method to locate the article link using link_text",
+        "Click the located article link"
+      ],
+      "required_locator_keys": []
+    }
+  ],
+  "existing_python_content": "from playwright.sync_api import Locator, Page\n\nfrom pages.elements import TextInput\nfrom pages.locators.blog_page_locators import BlogPageLocators\nfrom pages.page_objects.base_page import BasePage\n\n\nclass BlogPage(BasePage):\n    URL = '/blog'\n    search_input = TextInput(BlogPageLocators.SEARCH_INPUT)\n\n    def __init__(self, page: Page) -> None:\n        super(BlogPage, self).__init__(page)\n        self.search_submit = page.locator(BlogPageLocators.SEARCH_SUBMIT)\n        self.get_searched_posts = page.locator(BlogPageLocators.POSTS)\n        self.main_popup = page.locator(BlogPageLocators.MAIN_POPUP)\n\n    def search_articles(self, search_query: str) -> None:\n        self.search_input = search_query\n        self.search_submit.click()\n\n    def get_searched_link(self, link_text: str) -> Locator:\n        return self.page.get_by_role('link', name=link_text)\n"
+}
