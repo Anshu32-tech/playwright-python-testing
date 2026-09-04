@@ -1,0 +1,13 @@
+{
+  "C46": {
+    "script_file_path": "tests/login/test_login.py",
+    "correlation_map": {
+      "1. Navigate to /login. 2. Enter username 'admin'. 3. Click login.": {
+        "Navigate to the login page": "print('Navigating to /login')",
+        "Enter username admin": "print('Entering username admin')",
+        "Click the login button": "print('Clicking login button')",
+        "Assert test completion": "assert True"
+      }
+    }
+  }
+}
