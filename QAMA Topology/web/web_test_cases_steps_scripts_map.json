@@ -6,7 +6,7 @@
         "Navigate to the login page": "print('Navigating to /login')",
         "Enter username admin": "print('Entering username admin')",
         "Click the login button": "print('Clicking login button')",
-        "Assert test completion": "assert True"
+        "Verify successful execution": "assert True"
       }
     }
   }
