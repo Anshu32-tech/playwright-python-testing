@@ -1,0 +1,37 @@
+[
+  {
+    "file_path": "pages/page_objects/blog_page.py",
+    "component": "blog_page",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pages/page_objects/__init__.py",
+    "component": "__init__",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pages/page_objects/base_page.py",
+    "component": "base_page",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pages/page_objects/navbar.py",
+    "component": "navbar",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pages/page_objects/main_page.py",
+    "component": "main_page",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  }
+]
