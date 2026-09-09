@@ -1,5 +1,5 @@
 {
-  "shadow_branch_name": "shadow_qama_topology_1788765810",
+  "shadow_branch_name": "shadow_repo_topology_1788968136",
   "global_context": {
     "aava_username": "Anshu",
     "repo_owner": "Anshu32-tech",
@@ -8,39 +8,34 @@
   },
   "platforms": {
     "web": {
-      "page_class_metadata_path": "QAMA Topology/web/web_page_class_metadata.json",
+      "page_class_metadata_path": "",
       "locators_metadata_path": "",
       "page_class_path": "pages/page_objects",
-      "locators_path": "",
-      "test_cases_steps_scripts_map_path": ""
+      "locators_path": "pages/locators"
     },
     "windows": {
       "page_class_metadata_path": "",
       "locators_metadata_path": "",
       "page_class_path": "",
-      "locators_path": "",
-      "test_cases_steps_scripts_map_path": ""
+      "locators_path": ""
     },
     "android": {
       "page_class_metadata_path": "",
       "locators_metadata_path": "",
       "page_class_path": "",
-      "locators_path": "",
-      "test_cases_steps_scripts_map_path": ""
+      "locators_path": ""
     },
     "ios": {
       "page_class_metadata_path": "",
       "locators_metadata_path": "",
       "page_class_path": "",
-      "locators_path": "",
-      "test_cases_steps_scripts_map_path": ""
+      "locators_path": ""
     },
     "mac": {
       "page_class_metadata_path": "",
       "locators_metadata_path": "",
       "page_class_path": "",
-      "locators_path": "",
-      "test_cases_steps_scripts_map_path": ""
+      "locators_path": ""
     }
   }
 }
